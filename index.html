@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>File Renamer</h3>
+    <div class="wrapper">
+      <div>
+        <button id="base">Select Base Directory</button>
+      </div>
+      <strong id="basePath">path: </strong>
+      <div>
+        <button id="dest">Select Destination Directory</button>
+      </div>
+      <strong id="destPath">path: </strong>
+      <div>
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+
+    <!-- Adding Individual Renderer Process JS File -->
+    <script src="index.js"></script>
+  </body>
+</html>
